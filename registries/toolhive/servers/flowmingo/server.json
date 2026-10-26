@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.stacklok/flowmingo",
-  "description": "Flowmingo official remote MCP: hiring jobs, candidates, scored interviews, confirm-first actions",
+  "description": "Flowmingo Free AI Interviewer: jobs, candidates, scored interviews and confirm-first hiring actions",
   "title": "Flowmingo",
   "repository": {
     "url": "https://github.com/flowmingoai/flowmingo-mcp",
