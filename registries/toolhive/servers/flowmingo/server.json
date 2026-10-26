@@ -1,0 +1,79 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.stacklok/flowmingo",
+  "description": "Flowmingo's official remote MCP server for hiring data: jobs, candidates, scored interviews, confirm-first actions",
+  "title": "Flowmingo",
+  "repository": {
+    "url": "https://github.com/flowmingoai/flowmingo-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "icons": [
+    {
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ],
+      "src": "https://raw.githubusercontent.com/stacklok/toolhive-registry/main/registries/toolhive/servers/flowmingo/icon.svg"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.flowmingo.ai/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "io.github.stacklok": {
+        "https://mcp.flowmingo.ai/mcp": {
+          "tier": "Official",
+          "status": "Active",
+          "tags": [
+            "remote",
+            "recruiting",
+            "hiring",
+            "hr",
+            "interviews",
+            "candidates",
+            "applicant-tracking",
+            "oauth",
+            "productivity"
+          ],
+          "tools": [
+            "whoami",
+            "list_job_posts",
+            "list_interview_sets",
+            "list_projects",
+            "list_pipeline",
+            "list_results",
+            "get_result",
+            "list_stages",
+            "hiring_overview",
+            "top_candidates",
+            "get_result_detail",
+            "get_job_post",
+            "list_upcoming_interviews",
+            "list_candidates",
+            "get_candidate",
+            "compare_candidates",
+            "search",
+            "fetch",
+            "move_application_stage",
+            "reject_application",
+            "add_candidate_note",
+            "rate_candidate",
+            "shortlist_candidate",
+            "tag_candidate",
+            "invite_candidates"
+          ],
+          "overview": "## Flowmingo\n\nFlowmingo's official hosted MCP server connects AI assistants to a recruiter's Flowmingo hiring data. Flowmingo is a free AI Interviewer and screening platform for recruiters. Through this server an assistant can list job posts, interview sets, hiring projects and the candidate pipeline by stage, read interview results with per-competency scores and the AI summary, look up, search and compare candidates, and get a hiring overview or the top candidates by interview score. Write tools (invite candidates to an interview, move an application to another stage, reject an application, add a note, rate, shortlist or tag a candidate) are preview-by-default: without an explicit confirm they return what would change and change nothing. All data is scoped to the signed-in organisation.\n\nAuthentication is OAuth with Dynamic Client Registration (no client ID or secret to create), or a Flowmingo API key sent as an `x-api-key` or `Authorization: Bearer` header. Keys are created in Flowmingo under Settings, Integrations, API Keys. Docs: https://flowmingo.ai/integration/mcp",
+          "custom_metadata": {
+            "author": "Flowmingo",
+            "homepage": "https://flowmingo.ai/integration/mcp"
+          }
+        }
+      }
+    }
+  }
+}
